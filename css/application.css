@@ -239,7 +239,8 @@ p {
   flex-direction: column; }
 .modal__outer {
   display: flex;
-  position: relative; }
+  position: relative;
+  flex-direction: column; }
 .modal__container {
   -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15), 0 14px 28px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15), 0 14px 28px 0 rgba(0, 0, 0, 0.15);
@@ -255,7 +256,7 @@ p {
     .modal__container {
       margin: 30px;
       padding: 30px 20px;
-      width: 100%;
+      width: auto;
       height: auto; } }
   @media (max-width: 420px) {
     .modal__container {
