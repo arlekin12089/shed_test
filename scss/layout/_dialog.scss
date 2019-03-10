@@ -26,6 +26,7 @@
   border-radius: $br-dialog;
   overflow: auto;
   padding: 60px 80px 76px;
+  margin: 30px;
   background-color: $light-white;
   @media #{$brk-wide} {
     margin: 30px;
@@ -48,8 +49,8 @@
       display: inline-block;
       vertical-align: top;
       position: absolute;
-      right: -17px;
-      top: -15px;
+      right: 22px;
+      top: 12px;
       border-radius: $br-rounded;
       padding: 12px;
       @media #{$brk-wide} {
