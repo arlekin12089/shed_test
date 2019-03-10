@@ -1,0 +1,17 @@
+//Text
+@mixin text($size,$l-height:null,$weight:null,$color:null){
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+//box-shadow
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+
+$shadows: 0 10px 10px 0 $block-shadow, 0 14px 28px 0 $block-shadow;

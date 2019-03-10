@@ -1,0 +1,119 @@
+.modal{
+  &__window{
+    display: flex;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: $modal-background;
+      z-index: 99;
+      min-height: 100%;
+      width: auto;
+      flex-direction: column;
+  }
+  &__outer{
+    display: flex;
+  position: relative;
+  }
+  &__container{
+    @include box-shadow($shadows);
+    width: 645px;
+  height: 794px;
+  border-radius: $br-dialog;
+  overflow: auto;
+  padding: 60px 80px 76px;
+  background-color: $light-white;
+  @media #{$brk-wide} {
+    margin: 30px;
+    padding: 30px 20px;
+    width:100%;
+    height: auto;
+  }
+  @media #{$brk-narrow} {
+  margin: 10px;
+  }
+  @media #{$brk-narrow-height} {
+  margin: 10px;
+  }
+  }
+  &__close {
+      width: 46px;
+      height: 46px;
+      background-color: $total-black;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      right: -17px;
+      top: -15px;
+      border-radius: $br-rounded;
+      padding: 12px;
+      @media #{$brk-wide} {
+        right: 16px;
+          top: 10px;
+      }
+      @media #{$brk-narrow} {
+        right: 6px;
+        top: 5px;
+      }
+      @media #{$brk-narrow-height} {
+        right: 6px;
+        top: 5px;
+      }
+  }
+  &__close .fa-times:before {
+      font-size: 22px;
+      color: $white;
+  }
+  &__rating {
+      margin-bottom: 50px;
+      @media #{$brk-wide} {
+      margin-bottom: 15px;
+      }
+      @media #{$brk-narrow-height} {
+      margin-bottom: 15px;
+      }
+  }
+}
+
+
+
+.star__wrap  .icon-star::before {
+    content: url('#{$path-img}/default.png');
+    position: relative;
+    z-index: 9;
+    display: inline-block;
+}
+.star__wrap  .icon-star.icon-full::before {
+    content: url('#{$path-img}/active.png');
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+}
+
+div.star__wrap .star-main {
+    margin-top: 29px;
+    margin-bottom: 0;
+    @media #{$brk-wide} {
+    margin-top: 15px;
+    }
+    @media #{$brk-narrow-height} {
+    margin-top: 15px;
+    }
+  }
+div.star__wrap .star-full {
+    margin-right: 20px;
+    @media #{$brk-wide} {
+    margin-right: 10px;
+    }
+    @media #{$brk-narrow-height} {
+    margin-top: 10px;
+    }
+}
+div.star__wrap .star-full:last-child{
+  margin-right: 0;
+}

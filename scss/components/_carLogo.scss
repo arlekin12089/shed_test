@@ -1,0 +1,132 @@
+.car {
+    width: 185px;
+    display: block;
+    margin: 0 auto 20px;
+
+    &__upper {
+        display: block;
+        position: relative;
+        width: 200px;
+        height: 100px;
+        overflow: hidden;
+    }
+    &__window{
+      width: 90px;
+    height: 64px;
+    background-color: $white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 0;
+    }
+    &__wheels {
+        height: 45px;
+        width: 140px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: -25px;
+        z-index: 6;
+    }
+    &__front {
+        width: 45px;
+        height: 70px;
+        background-color: $yellow;
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        border-radius: 0 30px 0 0;
+        border: 5px solid $total-black;
+        z-index: 2;
+    }
+    &__smallwindow {
+        width: 25px;
+        height: 25px;
+        background-color: $blue;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 0px 15px 0 0;
+        border: 5px solid $total-black;
+    }
+    &__front_part{
+      width: 30px;
+        height: 40px;
+        background-color: $yellow;
+        position: absolute;
+        right: 18px;
+        bottom: 5px;
+        border-radius: 0 17px 0 0;
+        border: 5px solid $total-black;
+        z-index: 1;
+    }
+    &__body {
+        width: 120px;
+        height: 95px;
+        background-color: $light-yellow;
+        position: absolute;
+        left: 0px;
+        border-radius: 10px 10px 0 0;
+        border: 5px solid $total-black;
+    }
+    &__window span {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    text-transform: uppercase;
+}
+&__window span + i {
+    position: absolute;
+    bottom: 12px;
+    right: 35px;
+    font-size: 20px;
+}
+&__wheels span {
+    position: absolute;
+    background: $white;
+    border-radius: $br-rounded;
+    width: 15px;
+    height: 15px;
+    right: 5px;
+    top: 5px;
+}
+
+&__wheel_1, &__wheel_2 {
+    width: 35px;
+    height: 35px;
+    background-color: $grey;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 5px $total-black solid;
+    border-radius: $br-rounded;
+    -webkit-animation: round 1s;
+    animation: round 1s infinite linear;
+}
+&__wheel_2{
+    right: 0;
+    left: auto;
+}
+}
+
+.divider {
+    background-color: $yellow;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    display: block;
+    width: 5px;
+    height: 30px;
+    z-index: 3;
+}
+
+
+@keyframes round {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}

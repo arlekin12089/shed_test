@@ -1,0 +1,40 @@
+// Descriptive color variables
+$black:rgba(29, 29, 29, 0.98);
+$blue:#0021ff;
+$light-blue:#e7fcfb;
+$light-yellow:#ebf9eb;
+$total-black:#000000;
+$white: #ffffff;
+$light-white: #fcfcfc;
+$yellow:#ffaf32;
+$grey:#cccccc;
+
+//Functional color variables
+$primary-color: $black;
+$blue-btn-background:$blue;
+$blue-btn-hover:rgba($blue,.9);
+$blue-btn-text:$light-white;
+$block-shadow:rgba($total-black, 0.15);
+$modal-background: #d8d8d8;
+
+
+//Font stacks
+
+$multi-sans-serif: 'Muli', sans-serif;
+
+
+//Border radius
+
+$br-dialog:8px;
+$br-btn:4px;
+$br-rounded: 100%;
+
+// Asset paths
+
+$path-img:'../dialog';
+
+//Media query breakpoints
+
+$brk-narrow:'(max-width: 420px)';
+$brk-narrow-height:'(max-height: 420px)';
+$brk-wide:'(max-width: 820px)';

@@ -1,0 +1,23 @@
+
+.-mod {
+    @include box-shadow($shadows);
+    background-color: $blue-btn-background;
+    &:hover{
+      background-color: $blue-btn-hover;
+    }
+}
+
+.modal__button {
+   @include text(21px,21px,700,$color: $blue-btn-text);
+    width: 260px;
+    height: 60px;
+    border-radius: $br-btn;
+    text-align: center;
+    cursor: pointer;
+    @media #{$brk-wide} {
+      padding: 15px 30px;
+      width: auto;
+      height: auto;
+      font-size: 1em;
+    }
+}
