@@ -1,60 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>User rating</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
-<link rel="stylesheet" href="css/application.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vue-cute-rate@1.0.2/dist/vue-cute-rate.js"></script>
-
-</head>
-<body>
-  <!-- App -->
-  <div id="app">
-  <div class="app__inner">
-    <!-- Logo -->
-    <div class="car">
-      <div class="car__upper">
-        <div class="car__front">
-          <div class="car__smallwindow">
-          </div>
-        </div>
-        <div class="divider"></div>
-        <div class="car__front_part"></div>
-        <div class="car__body">
-          <div class="car__window">
-            <span>Delivery</span>
-            <i class="fas fa-address-card"></i>
-          </div>
-        </div>
-      </div>
-      <div class="car__wheels">
-        <div class="car__wheel_1">
-          <span></span>
-        </div>
-        <div class="car__wheel_2">
-          <span></span>
-        </div>
-      </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+    <title>test</title>
+  </head>
+  <body>
+    <div id="app">
     </div>
-    <!-- end Logo -->
-    <h1>Enjoing food delivery?</h1>
-     <p>Recommend us to others users by rating us just click on button.</p>
-     <result v-if="showResult" :result_value="result"></result>
-  		<button @click="showDialog = true" class="modal__button -mod">Rate us</button>
-  		<modal-dialog v-if="showDialog" @dialog-submit="onDialogSubmit" @close="showDialog = false"></modal-dialog>
-
-  	</div>
-    </div>
-  <!-- end App -->
-
-  <!-- Components -->
-	<script src="dialog/dialog.js"></script>
-  <script src="dialog/result.js"></script>
-  <!-- App script -->
-  <script src="app.js"></script>
+    <script src="/dist/build.js"></script>
+  </body>
 </html>

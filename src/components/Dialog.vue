@@ -1,5 +1,5 @@
-let dialog_template = `
-<div class="modal__window">
+<template>
+<div class="modal__window" >
         <div class="modal__outer">
             <div class="modal__container">
                 <h1>How did we do?</h1>
@@ -29,27 +29,29 @@ let dialog_template = `
             <button class="modal__close" @click="$emit('close')" ><i class="fas fa-times"></i></button>
         </div>
     </div>
+</template>
+<script>
+import StarRate from 'vue-cute-rate'
+export default{
+components: {
+    StarRate
+  },
+data: function() {
+    return {
+        foodRating:0,
+        driverRating: 0,
+        experienceRating:0
+    }
+},
 
-`
-
-Vue.component("modal-dialog", {
-    template: dialog_template,
-
-    data: function() {
+computed: {
+    compositeRating: function() {
         return {
-            foodRating:0,
-            driverRating: 0,
-            experienceRating:0
-        }
-    },
-
-    computed: {
-        compositeRating: function() {
-            return {
-                foodRating: this.foodRating,
-                driverRating: this.driverRating,
-                experienceRating: this.experienceRating
-            }
+            foodRating: this.foodRating,
+            driverRating: this.driverRating,
+            experienceRating: this.experienceRating
         }
     }
-})
+}
+}
+</script>

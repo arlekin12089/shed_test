@@ -6,12 +6,11 @@
   color: $color;
 }
 
-//box-shadow
 
+//Box-shadow
 @mixin box-shadow($params) {
   -webkit-box-shadow: $params;
   -moz-box-shadow: $params;
   box-shadow: $params;
 }
-
 $shadows: 0 10px 10px 0 $block-shadow, 0 14px 28px 0 $block-shadow;

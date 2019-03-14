@@ -14,7 +14,6 @@ body {
 }
 h1{
   @include text(36px,36px,700);
-  text-align: center;
   @media #{$brk-wide} {
     font-size: 24px;
     line-height: 26px;
@@ -22,7 +21,6 @@ h1{
 }
 h2{
   @include text(21px,30px,700);
-  text-align: center;
   @media #{$brk-wide} {
     font-size: 18px;
     line-height: 22px;
@@ -30,11 +28,8 @@ h2{
 }
 p{
   @include text(21px,30px,400);
-  text-align: center;
   @media #{$brk-wide} {
     font-size: 18px;
     line-height: 22px;
   }
-
-
 }
